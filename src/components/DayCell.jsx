@@ -31,11 +31,21 @@ const DayCell = ({ date, events }) => {
     <div className="day-cell" onClick={openAddForm}>
       <div className="day-number">{format(date, 'd')}</div>
 
-      {dayEvents.map(ev => (
-        <div key={ev.id} onClick={(e) => openEditForm(ev, e)}>
-          <EventItem event={ev} />
-        </div>
-      ))}
+      {dayEvents.map((ev) => (
+  <div
+    key={ev.id}
+    onClick={(e) => openEditForm(ev, e)}
+    draggable
+    onDragStart={(e) => {
+      e.dataTransfer.setData('event', JSON.stringify(ev));
+    }}
+  >
+    <EventItem event={ev} />
+  </div>
+))}
+
+
+     
 
       {showForm && (
         <div className="modal-backdrop" onClick={closeForm}>

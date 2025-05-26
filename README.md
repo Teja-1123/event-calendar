@@ -1,3 +1,46 @@
+# 📅 Custom Event Calendar
+
+A fully functional and responsive custom calendar built using **React.js**, featuring event management, month/year views, and persistent local storage.
+
+---
+
+## 🚀 Features
+
+- 📆 Switch between **Monthly** and **Yearly** calendar views
+- 📝 Add, edit, and delete events with title, description, color, and time
+- 💾 Save events locally using **LocalStorage** (no backend required)
+- 🔍 Quickly navigate to any month/year using a date picker
+- 📱 Fully responsive – auto-adjusts layout on zoom out to show year view
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js** – Frontend UI library
+- **JavaScript (ES6+)** – Application logic
+- **HTML5 & CSS3** – Structure and styling
+- **date-fns** – Date handling utilities
+- **LocalStorage API** – For client-side data persistence
+
+---
+
+## 📦 Installation Instructions
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/custom-event-calendar.git
+   cd custom-event-calendar
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

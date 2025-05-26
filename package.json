@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://Teja-1123.github.io/event-calendar",
+  "homepage": "https://Teja-1123.github.io/event-calendar/src/index.js",
   "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",

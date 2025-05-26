@@ -1,0 +1,270 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f2f5;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.day-cell {
+  background: #fff;
+  border: 1px solid #ddd;
+  min-height: 100px;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.day-number {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.event-item {
+  font-size: 0.8em;
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.event-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #03a9f4;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.calendar-header button {
+  background: white;
+  color: #03a9f4;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.calendar-header button:hover {
+  background: #e0f7fa;
+}
+
+.current-month {
+  font-size: 18px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.month-picker {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.app-container {
+  padding: 10px;
+}
+
+.year-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.month-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.month-title {
+  text-align: center;
+  font-weight: bold;
+  color: #03a9f4;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .year-view {
+    grid-template-columns: 1fr;
+  }
+}
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #eee;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-day-label {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.year-view {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.month-box {
+  background: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.month-box:hover {
+  background: #d0eaff;
+  transform: scale(1.05);
+}
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 4px;
+  background: white;
+  margin: 8px 0;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.calendar-day-label {
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/* Mini Mode Styling */
+.mini-grid {
+  font-size: 0.7rem;
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+
+.mini-grid .calendar-days {
+  display: none;
+}
+
+.mini-grid .day-cell {
+  min-height: 30px;
+  padding: 2px;
+}
+
+.mini-grid .day-number {
+  font-size: 0.7rem;
+  text-align: right;
+  padding: 2px;
+}

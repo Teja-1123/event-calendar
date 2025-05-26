@@ -4,6 +4,9 @@ A fully functional and responsive custom calendar built using **React.js**, feat
 
 ---
 
+Experience the live demo hosted on Vercel:  
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://event-calendar-fcb8-702rapatk-teja-1123s-projects.vercel.app/)
+
 ## 🚀 Features
 
 - 📆 Switch between **Monthly** and **Yearly** calendar views
